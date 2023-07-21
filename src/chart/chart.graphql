@@ -1,0 +1,24 @@
+type Chart {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateChartInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateChartInput {
+  id: Int!
+}
+
+type Query {
+  chart: [Chart]!
+  chart(id: Int!): Chart
+}
+
+type Mutation {
+  createChart(createChartInput: CreateChartInput!): Chart!
+  updateChart(updateChartInput: UpdateChartInput!): Chart!
+  removeChart(id: Int!): Chart
+}
